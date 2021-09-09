@@ -48,34 +48,34 @@ input{
 }
 .navbar{
   border-bottom:1px solid black;
+}
+.above{
   display: flex;
+  margin-left: 50px;
 }
 .searchbar{
+  display: flex;
+  justify-content: space-between;
   border-radius:40px ;
-  border: 3px solid black;
-  width: 1100px;
+  border: 2px solid black;
+  width: 70vw;
   height: 50px;
 }
 .searchfield{
-  margin-left:20px;
-  margin-top:7px;
-  width: 930px;
+  margin-top: 7.5px;
+  margin-left: 1.5vw;
   height: 35px;
+  width: 60vw;
   font-size: 20px;
-  background-color: transparent;
-  border: 0px solid;
 }
 .cancelicon{
   height:17px;
   padding: 14px;
   margin-top: 3px;
   border-radius: 50px;
-  margin-left: 20px;
-
-  /* border: 1px solid black; */
 }
 .searchbutton{
   height:35px;
   padding-bottom: 5px;
-  margin-left: 25px;
+  margin-right: 1.5vw;
 }

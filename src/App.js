@@ -10,8 +10,11 @@ function App() {
           <img src={logo} width='80px' alt='etsy logo' />
           <div className='searchbar'>
             <input className='searchfield'></input>
+            <div>
             <img src={cancelicon} alt='searchlogo' className='cancelicon' />
             <img src={searchlogo} alt='searchlogo' className='searchbutton' />
+            </div>
+
           </div>
         </div>
         <div className='below'>
