@@ -1,8 +1,12 @@
 import './App.css';
 import logo from './images/logo.svg'
-import searchlogo from './images/search.svg'
+import searchlogoblack from './images/searchblack.svg'
+import searchlogowhite from './images/searchwhite.svg'
+
 import cancelicon from './images/cancelicon.svg'
+import { useState } from 'react';
 function App() {
+const [hoversearch, sethoversearch] = useState(false)
   return (
     <div className="App">
       <div className='navbar'>
@@ -12,9 +16,8 @@ function App() {
             <input className='searchfield'></input>
             <div>
             <img src={cancelicon} alt='searchlogo' className='cancelicon' />
-            <img src={searchlogo} alt='searchlogo' className='searchbutton' />
+            <img src={hoversearch === true ?searchlogowhite:searchlogoblack} onMouseEnter={()=> sethoversearch(true)} onMouseLeave={()=> sethoversearch(false)} alt='searchlogo'className='searchicon' />
             </div>
-
           </div>
         </div>
         <div className='below'>

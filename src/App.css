@@ -52,6 +52,7 @@ input{
 .above{
   display: flex;
   margin-left: 50px;
+  width: 100vw;
 }
 .searchbar{
   display: flex;
@@ -60,6 +61,7 @@ input{
   border: 2px solid black;
   width: 70vw;
   height: 50px;
+  flex-direction: row;
 }
 .searchfield{
   margin-top: 7.5px;
@@ -74,8 +76,18 @@ input{
   margin-top: 3px;
   border-radius: 50px;
 }
-.searchbutton{
+.searchicon{
   height:35px;
-  padding-bottom: 5px;
-  margin-right: 1.5vw;
+  padding-top: 7.5px;
+  padding-left: 1vw;
+  padding-bottom: 7.5px;
+  padding-right: 1.5vw;
+  border-radius: 0px 50px 50px 0px;
+}
+.searchicon:hover{
+  fill:green;
+  background-color: rgb(31, 31, 31);
+}
+.cancelicon:hover {
+  background-color: rgb(187, 187, 187);
 }
