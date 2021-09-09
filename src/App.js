@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import logo from './images/logo.svg'
+import searchlogo from './images/search.svg'
+import cancelicon from './images/cancelicon.svg'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='navbar'>
+        <div className='above'>
+          <img src={logo} width='80px' alt='etsy logo' />
+          <div className='searchbar'>
+            <input className='searchfield'></input>
+            <img src={cancelicon} alt='searchlogo' className='cancelicon' />
+            <img src={searchlogo} alt='searchlogo' className='searchbutton' />
+          </div>
+        </div>
+        <div className='below'>
+
+        </div>
+
+      </div>
+
     </div>
   );
 }
