@@ -38,8 +38,6 @@ function App() {
             <li class="nine"><a href="#">Gifts & Gift Cards</a></li>
             <hr />
           </ul>
-
-
         </div>
 
       </div>
