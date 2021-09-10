@@ -217,59 +217,64 @@ input {
   background-color: rgb(223, 223, 223);
   cursor: pointer;
 }
+.below{
+  margin-top: 1.5vw;
+}
 ul li {
   display: inline;
 }
 ul {
   margin-top: 1vh;
-  width:97%;
+  width:100%;
 }
-
 a {
-  display: inline-block;
   padding: .75rem 0 .2rem 0 ;
-  margin: 0 1.4% 0 0;
   text-decoration: none;
   color: #333;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-  font-size: .7rem;
+  font-size: .82rem;
+  margin-right: 2.5%;
 }
 
 .two:hover ~ hr {
-  margin-left: 10%;
-  width: 12.5%;
+  margin-left: 10.5%;
+  width: 11.5%;
 }
 
 .three:hover ~ hr {
-  margin-left: 23%;
-  width: 8.2vw;
+  margin-left: 24%;
+  width: 8.8%;
 
 }
 .four:hover ~ hr {
-  width: 6.5vw;
-  margin-left: 34.5vw;
+  width: 8%;
+  margin-left: 35%;
 }
 .five:hover ~ hr {
-  margin-left: 50vw;
+  width:9%;
+  margin-left: 45%;
 }
 .six:hover ~ hr {
-  margin-left: 55%;
+  width:11.5%;
+  margin-left: 56%;
 }
 .seven:hover ~ hr {
-  margin-left: 66%;
+  width:9.2%;
+  margin-left: 69.5%;
 }
 
 .eight:hover ~ hr {
-  margin-left: 77%;
+  width:7.6%;
+  margin-left: 80.5%;
 }
 .nine:hover ~ hr {
-  margin-left: 88%;
+  width:9.1%;
+  margin-left: 90%;
 }
-
 hr {
   height: .15rem;
-  width: 9%;
+  width: 8.3%;
   margin-left: 0;
   background: black;
   border: none;
