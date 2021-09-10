@@ -129,30 +129,31 @@ input {
   border: 0px solid;
   outline: none !important;
 }
-.navbar {
+.App{
+  max-width: 1300px;
+  margin:auto;
 }
 .above {
   display: flex;
-  margin-left: 50px;
-  width: 100vw;
   margin-top: 12px;
+  align-items: center;
 }
 .searchbar {
   display: flex;
   justify-content: space-between;
   border-radius: 50px;
   border: 1.5px solid rgb(0, 0, 0);
-  width: 75vw;
   height: 48px;
+  width:80%;
   flex-direction: row;
   margin-left: 1vw;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(238, 237, 237);
 }
 .searchfield {
   margin-top: 7.5px;
   margin-left: 1.7vw;
   height: 35px;
-  width: 59vw;
+  width: 80%;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -173,7 +174,10 @@ input {
   border-radius: 0px 50px 50px 0px;
 }
 .searchbar:hover .searchicon{
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(56, 56, 56);
+}
+.searchbar:hover {
+  background-color: rgb(255, 255, 255);
 }
 .cancelicon:hover {
   background-color: rgb(187, 187, 187);
@@ -204,4 +208,70 @@ input {
 .signin:hover {
   background-color: rgb(223, 223, 223);
   cursor: pointer;
+}
+.cart{
+  padding:10%;
+  border-radius: 25px;
+}
+.cart:hover {
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+ul li {
+  display: inline;
+}
+ul {
+  margin-top: 1vh;
+  width:97%;
+}
+
+a {
+  display: inline-block;
+  padding: .75rem 0 .2rem 0 ;
+  margin: 0 1.4% 0 0;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+}
+
+.two:hover ~ hr {
+  margin-left: 10%;
+  width: 12.5%;
+}
+
+.three:hover ~ hr {
+  margin-left: 23%;
+  width: 8.2vw;
+
+}
+.four:hover ~ hr {
+  width: 6.5vw;
+  margin-left: 34.5vw;
+}
+.five:hover ~ hr {
+  margin-left: 50vw;
+}
+.six:hover ~ hr {
+  margin-left: 55%;
+}
+.seven:hover ~ hr {
+  margin-left: 66%;
+}
+
+.eight:hover ~ hr {
+  margin-left: 77%;
+}
+.nine:hover ~ hr {
+  margin-left: 88%;
+}
+
+hr {
+  height: .15rem;
+  width: 9%;
+  margin-left: 0;
+  background: black;
+  border: none;
+  transition: .3s ease-in-out;
 }
