@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  background-color: white;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  background-color: transparent;
+  border: 0px solid;
+  outline: none !important;
+}
+.na {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(189, 189, 189);
+}
+.navbar {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.above {
+  display: flex;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  border: 1.5px solid rgb(0, 0, 0);
+  height: 48px;
+  width: 80%;
+  flex-direction: row;
+  margin-left: 1vw;
+  background-color: rgb(238, 237, 237);
+}
+.searchfield {
+  margin-top: 7.5px;
+  margin-left: 1.7vw;
+  height: 35px;
+  width: 80%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.cancelicon {
+  height: 17px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  margin-right: 0.5vw;
+}
+.searchicon {
+  height: 30px;
+  padding-top: 9px;
+  padding-left: 1vw;
+  padding-bottom: 9px;
+  padding-right: 1.2vw;
+  border-radius: 0px 50px 50px 0px;
+}
+.searchbar:hover .searchicon {
+  background-color: rgb(56, 56, 56);
+}
+.searchbar:hover {
+  background-color: rgb(255, 255, 255);
+}
+.cancelicon:hover {
+  background-color: rgb(187, 187, 187);
+  cursor: pointer;
+}
+.searchicon:hover {
+  cursor: pointer;
+}
+.icon {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+.signin {
+  width: 105px;
+  height: 37px;
+  margin-top: 6px;
+  border-radius: 50px;
+  margin-right: 1vw;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.signin:hover {
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+.cart {
+  padding: 10%;
+  border-radius: 25px;
+}
+.cart:hover {
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+.below {
+  margin-top: 1.5vw;
+}
+ul {
+  display: flex;
+}
+a {
+  font-size: 0.9rem;
+}
+ul a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: gray;
+  position: relative;
+  margin: -10px 0;
+  display: inline-block;
+  padding: 10px 19px;
+}
+.first {
+  padding: 10px 19px 0px 0px;
+}
+.last {
+  padding: 10px 0px 0px 19px;
+}
+ul a::after {
+  content: "";
+  background: black;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s all 0.015s;
+}
+ul a::after {
+  left: 100%;
+  right: 0;
+}
+ul a:hover ~ a::after {
+  left: 0%;
+  right: 100%;
+}
+ul a:hover::after {
+  left: 0;
+  right: 0;
+}
+.dropdown-content {
+  min-width: 1300px;
+  max-width: 1300px;
+  margin: auto;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(80, 80, 80, 0.2);
+  z-index: 2;
+  border-radius: 0px 0px 7px 7px;
+  left: 0;
+  right: 0;
+}
