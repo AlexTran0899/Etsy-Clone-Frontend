@@ -11,30 +11,24 @@ a {
   width: 400px;
   border-right: 1px solid grey;
 }
-.second {
-  width: 606px;
-}
-.third {
-  width: 303px;
-}
 .each {
   display: flex;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
   font-weight: 400;
   color: rgb(36, 36, 36);
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px;
   justify-content: space-between;
   align-items: center;
 }
+
 .each:hover {
   background-color: rgb(218, 218, 218);
   cursor: pointer;
 }
 .foot {
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .h1 {
   font-weight: 600;
@@ -57,4 +51,70 @@ a {
   margin-right: 12px;
   cursor: pointer;
   transition-timing-function: ease;
+}
+.second {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 550px;
+  /* align-items: flex-start; */
+  align-content: flex-start;
+}
+
+.eachSecond{
+  height: 40px;
+  width:50%;
+}
+.eachSecond a{
+  font-weight: 600;
+  font-size: .95rem;
+  font-family: "Montserrat", sans-serif;
+
+}
+.third {
+  width: 350px;
+
+}
+
+.imagebox{
+  height:300px;
+  width:320px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.imagebox img{
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.imagebox p{
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+}
+.imagebox h1{
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.imagebox:hover {
+  box-shadow: 0px 5px 10px 0px rgba(80, 80, 80, 0.2);
+  cursor: pointer;
+
 }

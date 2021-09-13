@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.PopularGifts {
+  width: 1300px;
+  margin: auto;
+  margin-top: 10px;
+}
+.PopularGifts h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: left;
+}
+.PopularGiftsItems {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.PopularGiftsItemEach {
+  height: 320px;
+  width: 250px;
+  padding: 10px;
+}
+.PopularGiftsItemEach:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px rgba(80, 80, 80, 0.2);
+}
+.PopularGiftsItemEach img {
+  width: 250px;
+  height: 210px;
+  border-radius: 10px;
+}
+.PopularGiftsItemEach h1 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rating {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.rating p {
+  margin-left: 5px;
+  font-size: .9rem;
+  color: grey;
+}
+.PopularGiftsItemEach h2 {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+}
