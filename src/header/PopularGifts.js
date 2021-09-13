@@ -5,12 +5,11 @@ import { Rating } from 'react-simple-star-rating'
 const data = JSON.parse(window.localStorage.getItem('data'))
 
 function App() {
-  console.log(data[9])
   return (
     <div className="PopularGifts">
       <h1>Popular gifts right now</h1>
       <div className='PopularGiftsItems'>
-        {data[9].map(each => 
+        {data?.[9]?.map(each => 
            <div className='PopularGiftsItemEach'>
            <img src={each.popularGifts_imageUrl} alt='populargiftimage'/>
            <h1>{each.popularGifts_Name}</h1>
