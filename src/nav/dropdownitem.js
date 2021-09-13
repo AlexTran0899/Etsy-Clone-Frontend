@@ -6,7 +6,7 @@ import rightarrowwithtail from '../images/rightarrowwithtail.svg'
 const data = JSON.parse(window.localStorage.getItem('data'))
 
 function App(props) {
-  const catagory = (data[props.id])
+  const catagory = (data?.[props?.id])
   const [currentSelect, setCurrentSelect] = useState(catagory.subCatagories[0].sub)
   useEffect(()=>{
     setCurrentSelect(catagory.subCatagories[0].sub)
