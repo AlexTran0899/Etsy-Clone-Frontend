@@ -23,10 +23,11 @@
 .PopularGiftsItemEach:hover {
   border-radius: 10px;
   box-shadow: 5px 5px 10px 5px rgba(80, 80, 80, 0.2);
+  cursor: pointer;
 }
 .PopularGiftsItemEach img {
-  width: 250px;
-  height: 210px;
+  width: 245px;
+  height: 200px;
   border-radius: 10px;
 }
 .PopularGiftsItemEach h1 {
