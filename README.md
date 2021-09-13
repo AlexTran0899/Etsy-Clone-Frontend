@@ -1,1 +1,1 @@
-https://newapptesttooo.herokuapp.com
+https://etsy-clone-frontend.herokuapp.com
