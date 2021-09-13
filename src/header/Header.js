@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Header.css';
 import PopularGifts from './PopularGifts'
-let data = JSON.parse(window.localStorage.getItem('data'))
 
 function App() {
+let data = JSON.parse(window.localStorage.getItem('data'))
+
   return (
     <div className="header">
       <h1>Prep for fall with unique picks.</h1>
