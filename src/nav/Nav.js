@@ -7,8 +7,6 @@ import cart from '../images/cart.svg'
 import DropdownItem from './dropdownitem'
 import cancelicon from '../images/cancelicon.svg'
 import { useEffect, useState } from 'react';
-import axios from 'axios'
-const api = process.env.REACT_APP_API_URL
 
 function App() {
   const [hoversearch, sethoversearch] = useState(false)
