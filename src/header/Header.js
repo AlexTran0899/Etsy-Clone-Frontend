@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Header.css';
 import PopularGifts from './PopularGifts'
-const data = JSON.parse(window.localStorage.getItem('data'))
+let data = JSON.parse(window.localStorage.getItem('data'))
 
 function App() {
   return (
