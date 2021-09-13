@@ -11,13 +11,13 @@ function App() {
       <div className='PopularGiftsItems'>
         {data?.[9]?.map(each => 
            <div className='PopularGiftsItemEach'>
-           <img src={each.popularGifts_imageUrl} alt='populargiftimage'/>
-           <h1>{each.popularGifts_Name}</h1>
+           <img src={each?.popularGifts_imageUrl} alt='populargiftimage'/>
+           <h1>{each?.popularGifts_Name}</h1>
            <div className='rating'>
-           <Rating ratingValue={each.store_star}  fillColor='black' size='15px'/>
-           <p>({each.store_rating})</p>
+           <Rating ratingValue={each?.store_star}  fillColor='black' size='15px'/>
+           <p>({each?.store_rating})</p>
            </div>
-           <h2>${(each.popularGifts_price/100).toFixed(2)}</h2>
+           <h2>${(each?.popularGifts_price/100).toFixed(2)}</h2>
          </div>
           )}
        
