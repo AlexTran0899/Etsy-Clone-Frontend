@@ -1,10 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './PopularGifts.css';
 import { Rating } from 'react-simple-star-rating'
+import { useEffect, useState } from 'react/cjs/react.development';
 
 
-function App() {
-let data = JSON.parse(window.localStorage.getItem('data'))
+function App(props) {
+  let storage = JSON.parse(window.localStorage.getItem('data'))
+  const [data, setdata] = useState(storage)
+  useEffect(() => {
+    setdata(storage)
+  }, [props.loaded])
+
   return (
     <div className="PopularGifts">
       <h1>Popular gifts right now</h1>

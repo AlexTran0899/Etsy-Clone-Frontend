@@ -1,9 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './Header.css';
 import PopularGifts from './PopularGifts'
+import { useEffect, useState } from 'react/cjs/react.development';
 
-function App() {
-let data = JSON.parse(window.localStorage.getItem('data'))
+
+function App(props) {
+  let storage = JSON.parse(window.localStorage.getItem('data'))
+  const [data, setdata] = useState(storage)
+  useEffect(() => {
+    setdata(storage)
+  }, [props.loaded])
 
   return (
     <div className="header">
@@ -13,7 +19,7 @@ let data = JSON.parse(window.localStorage.getItem('data'))
           <div className='outsidebox'> <div className='insideBox'> <img src={each?.uniquePicksimageUrl} className='circle' alt='imagecircle' /> </div><p>{each?.uniquePicksName}</p> </div>
         )}
       </div>
-      <PopularGifts/>
+      <PopularGifts loaded={props.loaded}/>
     </div>
   );
 }

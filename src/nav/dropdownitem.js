@@ -3,14 +3,15 @@ import { useEffect, useState } from 'react';
 import rightarrow from '../images/rightarrow.svg'
 import rightarrowwithtail from '../images/rightarrowwithtail.svg'
 
-
 function App(props) {
   let data = JSON.parse(window.localStorage.getItem('data'))
   const catagory = (data?.[props?.id])
   const [currentSelect, setCurrentSelect] = useState(catagory?.subCatagories?.[0]?.sub)
+
   useEffect(()=>{
     setCurrentSelect(catagory?.subCatagories?.[0]?.sub)
   }, [catagory])
+
 
   return (
     <div className="dropdown">
