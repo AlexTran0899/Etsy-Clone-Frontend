@@ -9,7 +9,7 @@ function App(props) {
   const catagory = (data?.[props?.id])
   const [currentSelect, setCurrentSelect] = useState(catagory.subCatagories[0].sub)
   useEffect(()=>{
-    setCurrentSelect(catagory.subCatagories[0].sub)
+    setCurrentSelect(catagory?.subCatagories?.[0]?.sub)
   }, [catagory])
   return (
     <div className="dropdown">
