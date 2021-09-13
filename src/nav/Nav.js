@@ -18,12 +18,6 @@ function App() {
     setcurrentItem(false)
   }
 
-  useEffect(() => {
-    axios.get(`${api}/api/catagory`)
-      .then(data => window.localStorage.setItem("data", JSON.stringify(data.data)))
-      .catch(err => console.log(err))
-  }, [])
-
   return (
     <div className="outside" onMouseLeave={() => setcurrentItem(false)}>
       <div className="na" >
